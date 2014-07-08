@@ -1,0 +1,297 @@
+/* globals */
+html {
+  width:100%;
+  height:100%;
+}
+
+body {
+  display:inline-block;
+  width:100%;
+  height:100%;
+  line-height:1.4;
+  
+  span.thin {
+    font-weight:100;
+  }
+  span.light {
+    font-weight:300;
+  }
+  span.regular {
+    font-weight:400;
+  }
+  span.semibold {
+    font-weight:600;
+    letter-spacing: 0.3px;
+  }
+  span.bold {
+    font-weight:700;
+  }
+  span.tiny {
+    font-size:rem-calc(13);
+  }
+}
+
+p {
+  font-weight:normal;
+  line-height:1.4;
+  margin-bottom:rem-calc(24);
+
+  &.larger {
+    font-size:rem-calc(18);
+  }
+  &.lighter {
+    font-weight:300;
+  }
+}
+
+a {
+  line-height:1.4;
+  &.phone-number {
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+}
+
+button, .button {
+  padding:rem-calc(10) rem-calc(25);
+  letter-spacing:0.7px;
+}
+
+@mixin short-phrase-text-style {
+  font-size:rem-calc(18);
+  letter-spacing: 0.2px;
+  line-height:1.4;
+}
+
+
+nav.top-bar ul, footer ul {
+  list-style:none;
+  margin-left:auto;
+  li {
+    margin-left:auto;
+    margin-bottom:auto;
+    &:before {
+      content:none;
+    }
+  }
+}
+
+form {
+//  padding-bottom:rem-calc(50);
+  
+  @include short-phrase-text-style;
+  
+  @media #{$medium-only}, #{$large-only} {
+    .row .column:first-child, .row .columns:first-child {
+      padding-right:rem-calc(10);
+      &+.column, &+.columns {
+        padding-left:rem-calc(10);
+      }
+      &:last-child {
+        padding-right:inherit;
+      }
+    }    
+  }
+}
+
+label {
+  @include short-phrase-text-style;
+
+  margin-bottom:rem-calc(13);
+  line-height:1;
+  color:inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"] {
+  margin-bottom:rem-calc(22);
+  font-size:rem-calc(20);
+
+  outline:none;
+  box-shadow:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+}
+
+h1, .h1 { // site title
+  
+}
+
+h2, .h2 { // page title
+  font-size:rem-calc(30);
+  letter-spacing:0.2px;
+  
+}
+
+h3, .h3 { // section title
+  letter-spacing:0.5px;
+}
+
+h4, .h4 { // paragraph title
+  font-size:rem-calc(28);
+  line-height:1;
+  font-weight:400;
+  letter-spacing: 0.9px;
+  margin:0;
+  margin-top:rem-calc(8);
+  margin-bottom:rem-calc(20);
+  color: #222;
+  text-rendering: optimizeLegibility;
+}
+
+h5, .h5 { // list title
+  font-weight:600;
+  letter-spacing: 0.7px;
+  margin-bottom:rem-calc(12);
+}
+
+
+code.block {
+  display:inline-block;
+  line-height:1.4;
+  margin-bottom:1.25rem;
+}
+
+
+span.cmap-logo {
+  font-weight:bold;
+  &.carrier {
+    color:$green;
+  }
+  &.map {
+//    color:black;
+  }
+}
+
+span.fmap-logo {
+  font-weight:bold;
+  &.fertility {
+    color:$blue;
+  }
+  &.map {
+//    color:black;
+  }
+}
+
+
+/* utilities */
+html .red-bg {
+  background-color:$red;
+  color:white;
+  h1, h2, h3, h4, h5, p {
+    color:white;
+  }
+}
+html .blue-bg {
+  background-color:$blue;
+  color:white;
+  h1, h2, h3, h4, h5, p {
+    color:white;
+  }
+}
+html .yellow-bg {
+  background-color:$yellow;
+  color:white;
+  h1, h2, h3, h4, h5, p {
+    color:white;
+  }
+}
+html .green-bg {
+  background-color:$green;
+  color:white;
+  h1, h2, h3, h4, h5, p {
+    color:white;
+  }
+}
+html .teal-bg  {
+  background: $teal;
+  color:white;
+  h1, h2, h3, h4, h5, p {
+    color:white;
+  }
+}
+html .gray-bg  {
+  background: $gray;
+  color:black;
+  h1, h2, h3, h4, h5, p {
+    color:black;
+  }
+}
+html .white-bg {
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.margin-bottom-10 {
+  margin-bottom:10px !important;
+}
+
+ul.no-bullet {
+  list-style: none;
+  li:before {
+    content:none;
+  }
+}
+
+ul.lined {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  li:last-child {
+    border-bottom:none;
+  }
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display:inline-block;
+}
+
+// Hack b/c gulp-sass has a bug that prevents compiling grayscale($value) normally
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+li .fi-check {
+  display: inline;
+  color: $green;
+}
+
+.alert-box{
+  &.notice {
+    background-color:$yellow;
+    border-color:$light-yellow;
+  }
+  &.error {
+    background-color: $red;
+    border-color: #dd5a28;
+    color: white;
+  }
+}
+

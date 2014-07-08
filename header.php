@@ -26,50 +26,128 @@
 
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/favicon.png">
     <?php wp_head(); ?>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    
+    <script type="text/javascript" src="//use.typekit.net/oda5kuu.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body <?php body_class(); ?>>
   <?php do_action('foundationPress_after_body'); ?>
 
-  <div class="off-canvas-wrap">
-  <div class="inner-wrap">
 
   <?php do_action('foundationPress_layout_start'); ?>
 
-  <header>
-    <div class="contain-to-grid">
-      <nav class="top-bar" data-topbar="">
-        <ul class="title-area">
-          <li class="name">
-            <a href="/"><img alt="Logo" class="logo" src="https://recombine.com/assets/logo.png">
-            Recombine
-            </a>
-          </li>
-          <li class="toggle-topbar menu-icon">
-            <a href="#">
-              <span>Menu</span>
-            </a>
-          </li>
-        </ul>
-        <div class="top-bar-section">
-          <ul class="right">
-            <li class="red">
-              <a class="active" href="http://news.recombine.com">News</a>
-            </li>
-            <li class="green">
-              <a class="" href="http://recombine/about">About Us</a>
-            </li>
-            <li class="yellow">
-              <a href="http://patients.recombine.com">Patients</a>
-            </li>
-            <li class="blue">
-              <a href="http://clinics.recombine.com">Providers</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+    <div class="navigation-bar-module">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="top-bar-wrapper fixed">
+            <nav
+              class="top-bar"
+              data-options="scrolltop: false"
+              data-topbar
+              id="nav-bar">
+              <ul class="title-area">
+                <li class="name">
+                  <h1>
+                    <a href="/">
+                      <img class="logo" src="https://recombine.com/assets/logo.png" alt="Recombine logo">
+                      Recombine
+                    </a>                  
+                  </h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                  <a href="">
+                    <span>Menu</span>
+                  </a>
+                </li>
+              </ul>
 
-<main class="container" role="document">
+              <section class="top-bar-section">
+                <ul class="right">
+                  <li>
+                    <a href="#/register">
+                      Register
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#/login">
+                      Log In
+                    </a>
+                  </li>
+                </ul>
+                <ul class="left">
+                  <li class="has-dropdown">
+                    <a href="" id="services-dropdown-button">
+                      Services
+                    </a>
+                    <ul class="dropdown hide-for-large-up">
+                      <li>
+                        <a href="#/carriermap">CarrierMap</a>
+                      </li>
+                      <li>
+                        <a href="#/fertilitymap">FertilityMap</a>
+                      </li>
+                      <li>
+                        <a href="">LoremMap</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="" id="my-recombine-dropdown-button">
+                      My Recombine
+                    </a>
+                    <ul class="dropdown hide-for-large-up">
+                      <li>
+                        <a href="#/register-for-carriermap">Register for CarrierMap</a>
+                      </li>
+                      <li>
+                        <a href="#/claim-test/choose">Claim My Test</a>
+                      </li>
+                      <li>
+                        <a href="">View My Results</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-bar-wrapper top-bar-submenu-wrapper fixed closed show-for-large-up">
+        <section class="top-bar-section top-bar-horizontal-submenu closed"
+          data-button-id="services-dropdown-button">
+          <ul class="inline-list no-bullet">
+            <li>
+              <a href="#/carriermap">CarrierMap</a>
+            </li>
+            <li>
+              <a href="#/fertilitymap">FertilityMap</a>
+            </li>
+            <li>
+              <a href="">LoremMap</a>
+            </li>
+          </ul>        
+        </section>
+  
+        <section class="top-bar-section top-bar-horizontal-submenu closed"
+          data-button-id="my-recombine-dropdown-button">
+          <ul class="inline-list no-bullet">
+            <li>
+              <a href="#/register-for-carriermap">Register for CarrierMap</a>
+            </li>
+            <li>
+              <a href="#/claim-test/choose">Claim My Test</a>
+            </li>
+            <li>
+              <a href="">View My Results</a>
+            </li>
+          </ul>        
+        </section>
+      </div>
+    </div>
+
+
   <?php do_action('foundationPress_after_header'); ?>
-  <div class="row">
