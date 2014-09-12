@@ -28,3 +28,51 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
   http://foundation.zurb.com/docs/sass.html
 
 ---------------------------------------------------------------------------- */
+
+
+
+/*  posts  */
+article.post {
+  padding-bottom:10px;
+  
+  figure {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    }
+  &:nth-child(odd) img {
+    float:left;
+
+    padding-right:25px;
+    padding-bottom:25px;
+  }
+
+  &:nth-child(even) img {
+    float:right;
+
+    padding-left:25px;
+    padding-bottom:25px;
+  }
+}
+
+/*  sidebar  */
+aside#sidebar {
+  ul {
+    list-style:none;
+    margin-left:0;
+  }
+}
+
+/*  Footer  */
+
+footer:not(.for-the-page) {
+  background: none;
+  z-index: 1;
+  position: inherit;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  min-height: none;
+  border-top: none;
+}
+
