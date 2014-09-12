@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-
+  <div class="horizontal-pane hidden"></div>
   <div class="horizontal-pane page-title">
     <section class="page-title">
       <h2>
@@ -14,7 +14,7 @@
   <div class="row">
 
 
-	<div class="small-12 large-8 columns" role="main">
+	<div class="large-9 large-centered columns" role="main">
 	
   	<?php if ( have_posts() ) : ?>
 		
