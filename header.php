@@ -118,34 +118,14 @@
                     <span class="navbar-help-link">Help</span>
                   </a>
                 </li>
-                <li ng-show="contextualButton() === 'register'">
+                <li>
                   <a href="//recombine.com/register">
                     <span>Register</span>
                   </a>
                 </li>
-                <li ng-show="contextualButton() === 'claim test'">
-                  <a href="//recombine.com/enter-code">
-                    <span>Claim Test</span>
-                  </a>
-                </li>
-                <li ng-show="contextualButton() === 'patients site'">
-                  <a ng-click="goToPatientsSite()">
-                    <span>Dashboard</span>
-                  </a>
-                </li>
-                <li ng-show="contextualButton() === 'clinics site'">
-                  <a href="//clinics.recombine.com/dashboard">
-                    <span>Dashboard</span>
-                  </a>
-                </li>
                 <li>
-                  <a href="//recombine.com/login" ng-hide="loggedIn()">
+                  <a href="//recombine.com/login">
                     <span>Log In</span>
-                  </a>
-                </li>
-                <li>
-                  <a ng-click="signOut()" ng-show="loggedIn()">
-                    <span>Log Out</span>
                   </a>
                 </li>
               </ul>
