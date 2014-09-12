@@ -14,7 +14,7 @@
   <div class="row">
 
 
-	<div class="large-9 large-centered columns" role="main">
+	<div class="medium-8 large-9 columns" role="main">
 	
   	<?php if ( have_posts() ) : ?>
 		

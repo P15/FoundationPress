@@ -53,7 +53,7 @@
               <li class="name">
                 <h1>
                   <a href="//recombine.com/">
-                    <img class="logo" src="images/logo.png" alt="Recombine logo">
+                    <img class="logo" src="//recombine-public-new-staging.herokuapp.com/images/logo.png" alt="Recombine logo">
                     Recombine
                   </a>
                 </h1>
