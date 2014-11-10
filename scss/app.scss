@@ -49,7 +49,7 @@ aside#sidebar {
 
 /*  Footer  */
 
-footer:not(.for-the-page) {
+footer:not(.for-the-page), .footer {
   background: none;
   z-index: 1;
   position: inherit;

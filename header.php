@@ -22,14 +22,14 @@
     } ?></title>
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/app.css" />
-    <link rel="stylesheet" href="//recombine-public-new-staging.herokuapp.com/styles/main.css" />
+    <link rel="stylesheet" href="//recombine.com/styles/main.css" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/foundation-icons/foundation-icons.css?body=1" media="all" rel="stylesheet" />
 
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/favicon.png">
     <?php wp_head(); ?>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="//recombine-public-new-staging.herokuapp.com/scripts/main-2.js"></script>
+    <script type="text/javascript" src="//recombine.com/scripts/main2.js"></script>
     
     <script type="text/javascript" src="//use.typekit.net/oda5kuu.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

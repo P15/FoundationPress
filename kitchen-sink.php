@@ -704,10 +704,10 @@ get_header(); ?>
 			  <strong class="hide-for-touch">You are not on a touch-enabled device.</strong>
 			</p>
 
-			<footer>
+			<div class="footer">
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
 				<p><?php the_tags(); ?></p>
-			</footer>
+			</div>
 			<?php comments_template(); ?>
 		</article>
 	<?php endwhile; // End the loop ?>
