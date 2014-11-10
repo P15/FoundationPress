@@ -2,7 +2,7 @@
 
 <!-- Row for main content area -->
 <div class="row">
-  <div class="medium-12 large-8 columns" role="main">
+  <div class="medium-8 large-9 columns" role="main">
 
     <?php if ( have_posts() ) : ?>
 
@@ -25,7 +25,11 @@
     <?php } ?>
 
   </div>
+
+  <div class="medium-4 large-3 columns">
+    <?php get_sidebar(); ?>
+  </div>
+  
 </div>
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

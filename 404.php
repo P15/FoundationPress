@@ -2,11 +2,13 @@
 
 <!-- Row for main content area -->
 <div class="row">
-  <div class="medium-12 large-8 columns" role="main">
+  <div class="medium-8 large-9 columns" role="main">
 
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
       <header>
-        <h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
+        <h1 class="entry-title">
+          <?php _e('File Not Found', 'FoundationPress'); ?>
+        </h1>
       </header>
       <div class="entry-content">
         <div class="error">
@@ -22,8 +24,11 @@
     </article>
 
   </div>
+
+  <div class="medium-4 large-3 columns">    
+    <?php get_sidebar(); ?>
+  </div>
   
 </div>
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

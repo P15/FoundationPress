@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="row">
-  <div class="medium-12 large-8 columns" role="main">
+  <div class="medium-8 large-9 columns" role="main">
 
     <?php do_action('foundationPress_before_content'); ?>
 
@@ -31,7 +31,11 @@
     <?php do_action('foundationPress_after_content'); ?>
 
   </div>
+  
+  <div class="medium-4 large-3 columns">    
+    <?php get_sidebar(); ?>
+  </div>
+  
 </div>
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

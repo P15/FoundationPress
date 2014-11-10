@@ -43,8 +43,10 @@
       <?php do_action('foundationPress_after_content'); ?>
 
     </div>
-    <?php get_sidebar(); ?>
-
+    <div class="medium-4 large-3 columns">    
+      <?php get_sidebar(); ?>
+    </div>
+    
   </div>
 </main>
 
