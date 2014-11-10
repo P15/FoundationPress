@@ -167,7 +167,7 @@ get_header(); ?>
 			    <div class="row">
 			      <div class="large-12 columns">
 			        <label>Textarea Label</label>
-			        <textarea placeholder="small-12.columns"></textarea>
+			        <textarea placeholder="medium-12 columns"></textarea>
 			      </div>
 			    </div>
 

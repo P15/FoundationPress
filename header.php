@@ -29,7 +29,7 @@
     <?php wp_head(); ?>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="//recombine-public-new-staging.herokuapp.com/scripts/main.js"></script>
+    <script type="text/javascript" src="//recombine-public-new-staging.herokuapp.com/scripts/main-2.js"></script>
     
     <script type="text/javascript" src="//use.typekit.net/oda5kuu.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
