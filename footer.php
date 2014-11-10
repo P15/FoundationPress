@@ -1,6 +1,6 @@
 
 
-<footer class="for-the-page">
+<footer>
 
 	<div class="row">
 		<div class='medium-2 small-6 columns'>
